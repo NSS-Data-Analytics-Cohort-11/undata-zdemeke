@@ -431,31 +431,98 @@
    "id": "b70155a5-ad46-453b-84a9-e7f204c5edb9",
    "metadata": {},
    "source": [
-    "Q7."
+    "# Q7. Countries have data all years."
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": null,
+   "execution_count": 25,
    "id": "9537dc83-bf53-4438-9cc2-027450df9a7c",
    "metadata": {},
    "outputs": [],
    "source": [
-    "countries_years=gdp_df.groupby('country')['year'].nunique()"
+    "countries_years=gdp_df.groupby('Country')['Year'].nunique()\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 26,
+   "id": "8e90f2ee-08fc-4aec-8f72-632924e07de3",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "Country\n",
+       "Afghanistan                    20\n",
+       "Africa Eastern and Southern    33\n",
+       "Africa Western and Central     33\n",
+       "Albania                        33\n",
+       "Algeria                        33\n",
+       "                               ..\n",
+       "Viet Nam                       33\n",
+       "West Bank and Gaza             29\n",
+       "World                          33\n",
+       "Zambia                         33\n",
+       "Zimbabwe                       33\n",
+       "Name: Year, Length: 242, dtype: int64"
+      ]
+     },
+     "execution_count": 26,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "countries_years"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 30,
+   "id": "44a6e1d9-aa83-420c-805c-80d66d96bfd3",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "32"
+      ]
+     },
+     "execution_count": 30,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#gdp_df['Year'].max()-gdp_df['Year'].min()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 29,
+   "id": "9818e3af-0aa3-4f3b-acf2-6ecfa556c3c5",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "1990"
+      ]
+     },
+     "execution_count": 29,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#gdp_df['Year'].min()"
    ]
   },
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "8e90f2ee-08fc-4aec-8f72-632924e07de3",
-   "metadata": {},
-   "outputs": [],
-   "source": []
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "id": "44a6e1d9-aa83-420c-805c-80d66d96bfd3",
+   "id": "76df3419-795f-40d7-8650-4867b3d54c73",
    "metadata": {},
    "outputs": [],
    "source": []
